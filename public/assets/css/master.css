@@ -1,0 +1,522 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    font-family: 'Muli', Arial, sans-serif;
+}
+
+/* Welcome Page -- Header */
+
+header .topBar {
+    width: 100%;
+    height: 80px;
+    background-color: #112039;
+    padding: 0 15%;
+    line-height: 80px;
+}
+
+header .topBar .logo {
+    display: block;
+    float: left;
+    height: 70px;
+    padding-top: 5px;
+    outline: none;
+}
+
+header .topBar .navigation {
+    float: right;
+}
+
+header .topBar .navigation ul {
+    list-style-type: none;
+}
+
+header .topBar .navigation ul li {
+    display: inline-block;
+}
+
+header .topBar .navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all .2s;
+    outline: none;
+}
+
+header .topBar .navigation ul li a:hover {
+    color: #c2cad9;
+}
+
+header .topBar .user {
+    float: right;
+    margin-left: 40px;
+}
+
+header .topBar .user .login {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all .2s;
+    outline: none;
+}
+
+header .topBar .user .login:hover {
+    color: #c2cad9;
+}
+
+header .topBar .user .register {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    transition: all .2s;
+    outline: none;
+}
+
+header .topBar .user .register:hover {
+    background-color: #fff;
+    color: #112039;
+}
+
+header .topBar .user .logout {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .topBar .user .logout img {
+    width: 14px;
+    margin-left: 10px;
+}
+
+/* Main */
+
+main.homePage .homeBanner {
+    width: 100%;
+    height: 352px;
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main.homePage .features {
+    width: 100%;
+    padding: 0 10%;
+    margin: 50px 0;
+}
+
+main.homePage .features nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 0px 0px 5px rgba(40, 40, 40, 0.3);
+}
+
+main.homePage .features nav ul li {
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 25%;
+    text-align: center;
+    padding: 10px 15px;
+    position: relative;
+}
+
+main.homePage .features nav ul li::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 35px;
+    background-color: #d8d8d8;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+main.homePage .features nav ul li:last-child::after {
+    display: none;
+}
+
+main.homePage .features nav ul li:last-child {
+    line-height: 45px;
+}
+
+main.homePage .features nav ul li img {
+    width: 45px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+main.homePage .products {
+    width: 100%;
+    padding: 40px 10%;
+}
+
+main.homePage .products .block {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+main.homePage .products .block .blockTitle {
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+main.homePage .products .block .blockTitle::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: #0a70ef;
+}
+
+main.homePage .products .block .list {
+    display: flex;
+    flex-direction: row;
+}
+
+main.homePage .products .block .productLink {
+    display: block;
+    width: 350px;
+    height: 100%;
+    text-decoration: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 10px;
+}
+
+main.homePage .products .block .productLink:hover .product .imageContainer img {
+    transform: scale(1.1);
+}
+
+main.homePage .products .block .product {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid rgba(148,148,148,0.4);
+}
+
+main.homePage .products .block .product .imageContainer {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+main.homePage .products .block .product .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    transition: all .2s;
+}
+
+main.homePage .products .block:nth-child(3) .product .imageContainer img {
+    object-fit: cover;
+}
+
+main.homePage .products .block .product .info {
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+}
+
+main.homePage .products .block .product .info h3 {
+    color: #272727;
+    margin-bottom: 10px;
+}
+
+main.homePage .products .block .product .info .preco {
+    color: #0a70ef;
+    font-size: 14pt;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+main.homePage .products .block .product .info .preco_cartao {
+    color: #272727;
+    font-size: 10pt;
+}
+
+main.suportePage {
+    min-height: calc(100vh - 110px);
+}
+
+main.suportePage .contentContainer {
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+}
+
+main.suportePage .contentContainer h2 {
+    margin-bottom: 40px;
+    color: #112039;
+    font-size: 22pt;
+}
+
+main.suportePage .contentContainer input {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 370px;
+    padding: 15px;
+    font-size: 11pt;
+    border: 1px solid rgba(123,123,123,0.2);
+    margin-bottom: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+main.suportePage .contentContainer textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px;
+    min-height: 180px;
+    max-width: 370px;
+    font-size: 11pt;
+    font-family: 'Muli', Arial, sans-serif;
+    border: 1px solid rgba(123,123,123,0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+main.suportePage .contentContainer .submit {
+    padding: 10px 35px;
+    background-color: #fff;
+    border: 2px solid #112039;
+    cursor: pointer;
+    transition: all .2s;
+    font-family: 'Muli', Arial, sans-serif;
+}
+
+main.suportePage .contentContainer .submit:hover {
+    background-color: #112039;
+    color: #fff;
+}
+
+main.produtoPage {
+    padding: 70px 15%;
+}
+
+main.produtoPage .contentContainer {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(123,123,123,0.2);
+    box-shadow: 0px 0px 7px rgba(25,25,25,0.1);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main.produtoPage .contentContainer .imageContainer {
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 50%;
+    padding: 40px;
+}
+
+main.produtoPage .contentContainer .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main.produtoPage .contentContainer .info {
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 50%;
+    padding: 50px 30px;
+}
+
+main.produtoPage .contentContainer .info .titulo {
+    color: #112039;
+}
+
+main.produtoPage .contentContainer .info .categoria {
+    color: #a4a4a4;
+    font-size: 13pt;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+main.produtoPage .contentContainer .info .preco {
+    color: #396dc4;
+    font-size: 22pt;
+}
+
+main.produtoPage .contentContainer .info .preco_cartao {
+    font-size: 12pt;
+    margin-bottom: 40px;
+}
+
+main.produtoPage .contentContainer .info .descricao {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+main.produtoPage .contentContainer .info .comprar {
+    text-decoration: none;
+    color: #112039;
+    border: 2px solid #112039;
+    padding: 10px 30px;
+    transition: all .2s;
+}
+
+main.produtoPage .contentContainer .info .comprar:hover {
+    background-color: #112039;
+    color: #fff;
+}
+
+main.loginPage {
+    padding: 50px;
+    min-height: calc(100vh - 110px);
+}
+
+main.loginPage .contentContainer {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px 1px 7px rgba(25,25,25,0.2);
+    padding: 40px;
+}
+
+main.loginPage .contentContainer h2 {
+    color: #112039;
+    margin-bottom: 40px;
+}
+
+main.loginPage .contentContainer input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(123,123,123,0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+main.loginPage .contentContainer .submit {
+    padding: 10px 40px;
+    color: #112039;
+    border: 2px solid #112039;
+    background-color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+main.loginPage .contentContainer .submit:hover {
+    background-color: #112039;
+    color: #fff;
+    
+}
+
+main.cadastroPage {
+    padding: 50px;
+    min-height: calc(100vh - 110px);
+}
+
+main.cadastroPage .contentContainer {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px 1px 7px rgba(25,25,25,0.2);
+    padding: 40px;
+}
+
+main.cadastroPage .contentContainer h2 {
+    color: #112039;
+    margin-bottom: 40px;
+}
+
+main.cadastroPage .contentContainer input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(123,123,123,0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+main.cadastroPage .contentContainer .submit {
+    padding: 10px 40px;
+    color: #112039;
+    border: 2px solid #112039;
+    background-color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+main.cadastroPage .contentContainer .submit:hover {
+    background-color: #112039;
+    color: #fff;
+    
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #112039;
+}
+
+footer h2 {
+    color: #fff;
+    font-size: 10pt;
+}
