@@ -421,6 +421,16 @@ main.loginPage .contentContainer h2 {
     margin-bottom: 40px;
 }
 
+main.loginPage .contentContainer .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+main.loginPage .contentContainer .success_message {
+	color: green;
+	margin-bottom: 20px;
+}
+
 main.loginPage .contentContainer input {
     display: block;
     width: 100%;
@@ -474,6 +484,11 @@ main.cadastroPage .contentContainer h2 {
     margin-bottom: 40px;
 }
 
+main.cadastroPage .contentContainer .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
 main.cadastroPage .contentContainer input {
     display: block;
     width: 100%;
@@ -507,6 +522,492 @@ main.cadastroPage .contentContainer .submit:hover {
     color: #fff;
     
 }
+
+main.adminPage {
+	padding: 50px 0;
+	min-height: calc(100vh - 130px);
+}
+
+main.adminPage .contentContainer {
+	max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 1px 1px 7px rgba(25,25,25,0.2);
+    padding: 40px;
+}
+
+main.adminPage .contentContainer .header {
+	margin-bottom: 30px;
+}
+
+main.adminPageAdminIndex .navigation ul {
+	list-style-type: none;
+}
+
+main.adminPageAdminIndex .navigation ul li {
+	display: inline-block;
+	width: 49%;
+}
+
+main.adminPageAdminIndex .navigation ul li a {
+	text-decoration: none;
+	font-size: 14pt;
+	color: #112039;
+	display: block;
+	padding: 10px 0;
+	transition: all .2s;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+main.adminPageAdminIndex .navigation ul li a:hover {
+	background-color: #112039;
+	color: #fff;
+}
+
+main.adminPageProdutosIndex table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+main.adminPageProdutosIndex table thead tr td {
+	font-size: 14pt;
+	text-align: left;
+	border-bottom: 1px solid rgba(123,123,123,0.2);
+	padding: 10px 5px;
+}
+
+main.adminPageProdutosIndex table tbody tr td {
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid rgba(123,123,123,0.2);
+}
+
+main.adminPageProdutosIndex table tbody tr:last-child td {
+	border: none;
+}
+
+main.adminPageProdutosIndex table tbody tr td a {
+	text-decoration: none;
+	padding: 5px 8px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	transition: all .2s;
+	color: #fff;
+}
+
+main.adminPageProdutosIndex table tbody tr td a:hover {
+	color: #d0d0d0;
+}
+
+main.adminPageProdutosIndex table tbody tr td a:nth-child(1) {
+	background-color: #112039;
+}
+
+main.adminPageProdutosIndex table tbody tr td a:nth-child(2) {
+	background-color: crimson;
+}
+
+main.adminPageProdutosIndex table tbody tr td a:nth-child(3) {
+	background-color: #e2a507;
+}
+
+main.adminPageProdutosIndex .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosIndex  .success_message {
+	color: green;
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosIndex .navigation {
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosIndex .navigation ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+main.adminPageProdutosIndex .navigation ul li {
+	display: inline-block;
+}
+
+main.adminPageProdutosIndex .navigation ul li a {
+	text-decoration: none;
+	font-size: 14pt;
+	padding: 5px 10px;
+	color: #112039;
+	transition: all .2s;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageProdutosIndex .navigation ul li a:hover {
+	background-color: #112039;
+	color: #fff;
+}
+
+main.adminPageProdutosNovo .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosNovo  .success_message {
+	color: green;
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosNovo .navigation {
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosNovo .navigation ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+main.adminPageProdutosNovo .navigation ul li {
+	display: inline-block;
+}
+
+main.adminPageProdutosNovo .navigation ul li a {
+	text-decoration: none;
+	font-size: 14pt;
+	padding: 5px 10px;
+	color: #112039;
+	transition: all .2s;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageProdutosNovo .navigation ul li a:hover {
+	background-color: #112039;
+	color: #fff;
+}
+
+main.adminPageProdutosNovo form {
+	text-align: left;
+	padding-bottom: 80px;
+}
+
+main.adminPageProdutosNovo form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+main.adminPageProdutosNovo form input, main.adminPageProdutosNovo form textarea {
+	display: block;
+	border: 1px solid rgba(123,123,123,0.2);
+	padding: 5px 10px;
+	width: 220px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageProdutosNovo form textarea {
+	min-width: 220px;
+	max-width: 220px;
+	height: 80px;
+}
+
+main.adminPageProdutosNovo form .submit {
+	background-color: #112039;
+	color: #fff;
+	padding: 5px 15px;
+	font-size: 13pt;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	margin-top: 20px;
+	float: right;
+	cursor: pointer;
+}
+
+main.adminPageProdutosEditar .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosEditar  .success_message {
+	color: green;
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosEditar .navigation {
+	margin-bottom: 20px;
+}
+
+main.adminPageProdutosEditar .navigation ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+main.adminPageProdutosEditar .navigation ul li {
+	display: inline-block;
+}
+
+main.adminPageProdutosEditar .navigation ul li a {
+	text-decoration: none;
+	font-size: 14pt;
+	padding: 5px 10px;
+	color: #112039;
+	transition: all .2s;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageProdutosEditar .navigation ul li a:hover {
+	background-color: #112039;
+	color: #fff;
+}
+
+main.adminPageProdutosEditar form {
+	text-align: left;
+	padding-bottom: 80px;
+}
+
+main.adminPageProdutosEditar form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+main.adminPageProdutosEditar form input, main.adminPageProdutosEditar form textarea {
+	display: block;
+	border: 1px solid rgba(123,123,123,0.2);
+	padding: 5px 10px;
+	width: 220px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageProdutosEditar form textarea {
+	min-width: 220px;
+	max-width: 220px;
+	height: 80px;
+}
+
+main.adminPageProdutosEditar form .submit {
+	background-color: #112039;
+	color: #fff;
+	padding: 5px 15px;
+	font-size: 13pt;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	margin-top: 20px;
+	float: right;
+	cursor: pointer;
+}
+
+main.adminPageUsuariosIndex table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+main.adminPageUsuariosIndex table thead tr td {
+	font-size: 14pt;
+	text-align: left;
+	border-bottom: 1px solid rgba(123,123,123,0.2);
+	padding: 10px 5px;
+}
+
+main.adminPageUsuariosIndex table tbody tr td {
+	text-align: left;
+	padding: 10px 5px;
+	border-bottom: 1px solid rgba(123,123,123,0.2);
+}
+
+main.adminPageUsuariosIndex table tbody tr:last-child td {
+	border: none;
+}
+
+main.adminPageUsuariosIndex table tbody tr td a {
+	text-decoration: none;
+	padding: 5px 8px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	transition: all .2s;
+	color: #fff;
+}
+
+main.adminPageUsuariosIndex table tbody tr td a:hover {
+	color: #d0d0d0;
+}
+
+main.adminPageUsuariosIndex table tbody tr td a:nth-child(1) {
+	background-color: #112039;
+}
+
+main.adminPageUsuariosIndex table tbody tr td a:nth-child(2) {
+	background-color: crimson;
+}
+
+main.adminPageUsuariosIndex table tbody tr td a:nth-child(3) {
+	background-color: #e2a507;
+}
+
+main.adminPageUsuariosIndex .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+main.adminPageUsuariosIndex  .success_message {
+	color: green;
+	margin-bottom: 20px;
+}
+
+main.adminPageUsuariosIndex .navigation {
+	margin-bottom: 20px;
+}
+
+main.adminPageUsuariosIndex .navigation ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+main.adminPageUsuariosIndex .navigation ul li {
+	display: inline-block;
+}
+
+main.adminPageUsuariosIndex .navigation ul li a {
+	text-decoration: none;
+	font-size: 14pt;
+	padding: 5px 10px;
+	color: #112039;
+	transition: all .2s;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageUsuariosIndex .navigation ul li a:hover {
+	background-color: #112039;
+	color: #fff;
+}
+
+/* ------------- */
+
+main.adminPageUsuariosEditar .error_message {
+	color: crimson;
+	margin-bottom: 20px;
+}
+
+main.adminPageUsuariosEditar  .success_message {
+	color: green;
+	margin-bottom: 20px;
+}
+
+main.adminPageUsuariosEditar .navigation {
+	margin-bottom: 20px;
+}
+
+main.adminPageUsuariosEditar .navigation ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+main.adminPageUsuariosEditar .navigation ul li {
+	display: inline-block;
+}
+
+main.adminPageUsuariosEditar .navigation ul li a {
+	text-decoration: none;
+	font-size: 14pt;
+	padding: 5px 10px;
+	color: #112039;
+	transition: all .2s;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageUsuariosEditar .navigation ul li a:hover {
+	background-color: #112039;
+	color: #fff;
+}
+
+main.adminPageUsuariosEditar form {
+	text-align: left;
+	padding-bottom: 80px;
+}
+
+main.adminPageUsuariosEditar form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+main.adminPageUsuariosEditar form input, main.adminPageUsuariosEditar form textarea, main.adminPageUsuariosEditar form select {
+	display: block;
+	border: 1px solid rgba(123,123,123,0.2);
+	padding: 5px 10px;
+	width: 220px;
+	margin-bottom: 15px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+
+main.adminPageUsuariosEditar form textarea {
+	min-width: 220px;
+	max-width: 220px;
+	height: 80px;
+}
+
+main.adminPageUsuariosEditar form .submit {
+	background-color: #112039;
+	color: #fff;
+	padding: 5px 15px;
+	font-size: 13pt;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	margin-top: 20px;
+	float: right;
+	cursor: pointer;
+}
+
 
 footer {
     width: 100%;
