@@ -11,7 +11,7 @@
 		<div class="navigation">
 			<ul>
 				<li><a href="{{ route('admin') }}">Voltar</a></li>
-				<li><a href="{{ route('admin.usuarios.novo') }}">Adicionar</a></li>
+				<li><a href="{{ route('cadastro') }}">Adicionar</a></li>
 			<ul>
 		</div>
 		

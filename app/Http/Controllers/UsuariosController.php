@@ -27,12 +27,12 @@ class UsuariosController extends Controller
 		$email = $request->email;
         $senha = $request->senha;
 		
-		$user = $this->objUser->where([['email', '=', $email], ['password', '=', $senha]])->count() > 0;
+		$user = $this->objUser->where([['email', '=', $email], ['password', '=', md5($senha)]])->count() > 0;
 		
 		if(!$user) {
 			return redirect('login')->with('erro', 'Os dados estão incorretos.');
 		}else {
-			$user = $this->objUser->where([['email', '=', $email], ['password', '=', $senha]])->first();
+			$user = $this->objUser->where([['email', '=', $email], ['password', '=', md5($senha)]])->first();
 			
 			session([
 				'user_name' => $user->name,
@@ -62,7 +62,7 @@ class UsuariosController extends Controller
 				$this->objUser->create([
 					'name' => $nome,
 					'email' => $email,
-					'password' => $senha,
+					'password' => md5($senha),
 					'access' => 1,
 				]);
 				
