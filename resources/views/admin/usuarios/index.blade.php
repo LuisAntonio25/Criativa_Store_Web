@@ -13,7 +13,7 @@
 				<li><a href="{{ route('admin') }}">Voltar</a></li>
 				<li><a href="{{ route('cadastro') }}">Adicionar</a></li>
 			<ul>
-		</div>
+		</div> 
 		
 		@if(session('success'))
 			<div class="success_message">{{ session('success') }}</div>
